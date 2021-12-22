@@ -1,8 +1,8 @@
 build:
     stage: build
     artifacts:
-    paths:
-     - _book
+        paths:
+         - _book
     script:
      - gitbook init
      - gitbook install
