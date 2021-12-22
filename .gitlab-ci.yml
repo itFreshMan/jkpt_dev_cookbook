@@ -1,0 +1,23 @@
+build:
+    stage: build
+    artifacts:
+    paths:
+     - _book
+    script:
+     - gitbook init
+     - gitbook install
+     - gitbook build
+    tags:
+     - build
+deploy:
+    stage: deploy
+    script:
+     - sudo rm -rf /var/www/book/*
+     - sudo cd _book  
+     - sudo cp -rf . /var/www/book
+     - sudo pwd
+     - echo "发布成功!"
+    tags:
+     - deploy
+    only:
+     - master
