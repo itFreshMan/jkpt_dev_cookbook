@@ -10,6 +10,7 @@
     * [ElasticSearch](part3/es.md)
 * [4.JIRA使用](part4/README.md)
     * [bug相关](part4/bug.md)
+* [5.自研组件清单](part5/README.md)
 * [附录I](partx/README.md)
     * [log4j漏洞](partx/log4j.md)
 
